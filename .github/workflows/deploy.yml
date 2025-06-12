@@ -31,6 +31,6 @@ jobs:
             sudo cp -r dist/* /var/www/html/
 
             echo "🔄 Restart backend service via systemd"
-            sudo systemctl restart finance.service
-            sudo systemctl status finance.service --no-pager
+            sudo systemctl restart finance-app.service
+            sudo systemctl status finance-app.service --no-pager
             echo "✅ Deployment completed successfully"
